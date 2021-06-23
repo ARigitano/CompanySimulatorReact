@@ -4,15 +4,16 @@ import Employee from '../components/Employee';
 
 const Company = () => {
     const gain = 0;
+    const employee = [<Employee name="Jeff" />, <Employee name="John" />, <Employee name="Jane" />, <Employee name="Jill" />];
 
-    return (
+     return (
         <div>
             <Navigation />
             <h1>Company</h1>
-            <Employee name ="Jim"/>
-            <Employee name ="Jane"/>
-            <Employee name ="Joe"/>
-            <Employee name ="Jill"/>
+            <p>{employee[0]}</p>
+            <p>{employee[1]}</p>
+            <p>{employee[2]}</p>
+            <p>{employee[3]}</p>
             <h3>Company gain: {gain}</h3>
         </div>
     );

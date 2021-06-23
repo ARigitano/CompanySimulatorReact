@@ -13,7 +13,7 @@ const Project = (props) => {
             <h3>Project: {name}</h3>
             <p>Turns required: {turnsRequired}</p>
             <p>Payment: {payment}</p>
-            <button>Start project</button>
+            <button>Work on project</button>
         </div>
     );
 };
