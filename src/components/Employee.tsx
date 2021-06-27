@@ -1,9 +1,13 @@
 import React from 'react';
 
-const Employee = (props) => {
+interface Props {
+    name: string;
+}
+
+const Employee: React.FC<Props> = (props) => {
     const name = props.name;
 
-    let randomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+    let randomNumber = (min: number, max: number) => Math.floor(Math.random() * (max - min + 1)) + min;
 
     const age = randomNumber(18, 67);
     const velocity = randomNumber(0, 100);
@@ -12,7 +16,7 @@ const Employee = (props) => {
     const problemSolving = randomNumber(0, 100);
 
     let workOnProject = () => {
-        return this.velocity;
+            return this.velocity;
     } 
 
     return (
