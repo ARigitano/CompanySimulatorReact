@@ -1,12 +1,19 @@
 import React from 'react';
 
-const Project = (props) => {
+interface Props {
+    name: string;
+}
+
+const Project: React.FC<Props> = (props) => {
     const name = props.name;
 
-    let randomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+    let randomNumber = (min: number, max: number) => Math.floor(Math.random() * (max - min + 1)) + min;
 
     const turnsRequired = randomNumber(1, 20);
-    const payment = turnsRequired * randomNumber(1000, 10000);
+    
+    const minPayment = 1000;
+    const maxPayment = 100000;
+    const payment = turnsRequired * randomNumber(minPayment, maxPayment);
 
     return (
         <div>

@@ -15,9 +15,10 @@ const Employee: React.FC<Props> = (props) => {
     const communication = randomNumber(0, 100);
     const problemSolving = randomNumber(0, 100);
 
-    let workOnProject = () => {
+    //this is possiblly undefined
+    /*let workOnProject = () => {
             return this.velocity;
-    } 
+    }*/
 
     return (
         <div className="employee">
